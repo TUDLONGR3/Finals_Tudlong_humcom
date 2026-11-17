@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Profile</title>
+  
+    <link rel="stylesheet" href="style.css">
+
+    
+        
+<body>
+  <div class="stars"></div>
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const starCount = 250;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('span');
+      const size = Math.random() * 3 + 1;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDelay = `${Math.random() * 4}s`;
+      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+  <header class="site-header">
+    <div class="header-left">
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="logo">NOVA</div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="hero-content">
+      <p>Welcome to NOVA</p>
+      <h1>Where Elegance<br>Meets Grace</h1>
+      <p class="tagline">Redefining modern modeling timeless beauty captured with passion and precision. Your journey to the spotlight starts here.</p>
+      <a href="gallery.html" class="btn-primary">View Portfolio</a>
+    </div>
+  </section>
+
+  <section class="featured-section">
+    <div class="section-heading">
+      <h2>Featured Works</h2>
+      <p>Curated selections from our latest collections</p>
+    </div>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <img src="trad.png" alt="Fashion">
+        <div class="card-overlay">
+          <h3>Fashion</h3>
+          <p>Editorial & Runway</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <img src="xmas.jpg" alt="Portrait">
+        <div class="card-overlay">
+          <h3>PORTRAIT</h3>
+          <p>Personal & Branding</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <img src="model.png" alt="Editorial">
+        <div class="card-overlay">
+          <h3>Editorial</h3>
+          <p>Magazine & Campaigns</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="agency-section">
+    <div class="about-column">
+      <h2>About NOVA</h2>
+      <p>NOVA is a premier modeling agency dedicated to discovering and nurturing exceptional talent. We believe that every individual possesses a unique radiance waiting to shine.</p>
+      <p>From editorial shoots to runway shows, our team brings years of industry experience and a genuine passion for the art of modeling. We don't just create images we craft timeless stories.</p>
+      <a href="about.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+    </div>
+    <div class="stats-column">
+      <div class="stat-item">
+        <div class="stat-number">200</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Featured Models</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>NOVA</h3>
+        <p>Elegance in every frame. Redefining the art of modeling since 1996</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT</a></p>
+        <p><a href="gallery.html">GALLERY</a></p>
+        <p><a href="contact.html">CONTACT</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Baguio City, Philippines</p>
+        <p>hello@nova.com</p>
+        <p>+63 912 345 6789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 NOVA. All rights reserved.</p>
+    </div>
+  </footer>
+</body>

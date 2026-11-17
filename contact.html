@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - NOVA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const starCount = 250;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('span');
+      const size = Math.random() * 3 + 1;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDelay = `${Math.random() * 4}s`;
+      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+  <header class="site-header">
+    <div class="header-left">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </div>
+    <div class="logo">NOVA</div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <p>Get In Touch</p>
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>Ready to start your journey with NOVA? We'd love to hear from you. Whether you're interested in representation, bookings, or collaborations reach out and let's create something beautiful together.</p>
+        
+        <div class="info-item">
+          
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉</div>
+          <div class="info-text">
+            <h3>Email</h3>
+            <p>baguio@nova.com<br>baguio@nova.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">☎</div>
+          <div class="info-text">
+            <h3>Phone</h3>
+            <p>+63 912 345 6789<br>+63 74 123 4567</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div class="info-text">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-wrapper">
+        <h2>Send a Message</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us more..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="section-heading" style="text-align:center; margin-bottom:2rem;">
+      <h2 style="font-size:2.5rem; color:#fff; font-family:'Playfair Display', serif; letter-spacing:3px; text-transform:uppercase; margin-bottom:0.8rem;">Find Us</h2>
+      <p style="color:#888; letter-spacing:2px; font-size:0.95rem;">Located in the heart of Baguio City</p>
+    </div>
+    <div class="map-container">
+      <!-- Replace with your actual Google Maps embed code here -->
+      <span>Map Location — Baguio City, Philippines</span>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>NOVA</h3>
+        <p>Elegance in every frame. Redefining the art of modeling since 2014.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Baguio City, Philippines</p>
+        <p>hello@nova.com</p>
+        <p>+63 912 345 6789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 NOVA. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

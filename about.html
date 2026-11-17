@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - NOVA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="stars"></div>
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const starCount = 250;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('span');
+      const size = Math.random() * 3 + 1;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDelay = `${Math.random() * 4}s`;
+      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+  <header class="site-header">
+    <div class="header-left">
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="logo">NOVA</div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <p>Discover Our Story</p>
+      <h1>About NOVA</h1>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="yes.jpg" alt="NOVA Agency">
+      </div>
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Founded in 2014, NOVA began with a simple vision to create a modeling agency that values authenticity, elegance, and professionalism, It is also a chance for people with disabilities  Based in Baguio City, we have grown from a small creative studio into a premier agency representing talented individuals across the country.</p>
+        <p>We believe that true beauty is timeless. Our approach combines classic elegance with modern vision helping our models build sustainable careers while staying true to themselves.</p>
+        <p>Every face at NOVA tells a unique story. We are here to help you tell yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission-section">
+    <div class="section-heading" style="text-align:center; margin-bottom:4rem;">
+      <h2 style="font-size:2.5rem; color:#fff; font-family:'Playfair Display', serif; letter-spacing:3px; text-transform:uppercase; margin-bottom:0.8rem;">Our Values</h2>
+      <p style="color:#888; letter-spacing:2px; font-size:0.95rem;">The principles that guide us every day</p>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-card">
+        <h3>Vision</h3>
+        <p>To redefine the standards of the modeling industry where talent meets integrity, and elegance meets opportunity.</p>
+      </div>
+      <div class="mission-card">
+        <h3>Mission</h3>
+        <p>To discover, nurture, and elevate exceptional talentproviding professional guidance and genuine support every step of the way.</p>
+      </div>
+      <div class="mission-card">
+        <h3>Excellence</h3>
+        <p>WE RECOGNIZE EACH ONE AND CELEBRATE THEIR UNIQUE TALENT, EVERYONE IS WELCOME!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="section-heading" style="text-align:center; margin-bottom:4rem;">
+  
+     <div class="team-image">
+          <img src="idk.png" alt="Team Member">
+        </div>
+        <h3>ROSHAN PSALMUEL K. TUDLONG</h3>
+        <p>Creative Director/Founder</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>NOVA</h3>
+        <p>Elegance in every frame. Redefining the art of modeling since 2014.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Baguio City, Philippines</p>
+        <p>baguio@nova.com</p>
+        <p>+63 912 345 6789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 NOVA. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
